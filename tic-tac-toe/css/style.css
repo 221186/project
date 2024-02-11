@@ -1,0 +1,17 @@
+body {
+  background-color: rgb(242, 252, 227);
+  color: rgb(44, 41, 44);
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+}
+header {
+  background-color: rgb(179, 249, 75);
+  padding: 2rem 5%;
+  text-align: center;
+}
+.btn {
+  
+}
+.btn-alt {
+
+}

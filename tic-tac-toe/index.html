@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=devi ce-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@700&family=Oleo+Script:wght@700&family=Oswald:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Play Tic, Tac Toe</h1>
+      <p>
+        상대방과 한 판 겨뤄보세요!
+      </p>
+    </div>
+  </header>
+  <main> 
+    <aside>
+      <h2>당신의 이름을 작성하세요.</h2>
+      <form>
+        <div>
+          <label id="playname">플레이어 이름</label>
+          <input type="text" name="username" id="playname">
+        </div>
+        <div>
+          <button type="submit">확인</button>
+          <button type="button">취소</button>
+        </div>
+      </form>
+    </aside>
+    <section id="game-users">
+     <ol>
+      <li>
+        <h2>플레이어 1</h2>
+        <h3>플레이어 이름</h3>
+        <p> X </p>
+        <button>Edit</button>
+      </li>
+      <li>
+        <h2>플레이어 2</h2>
+        <h3>플레이어 이름</h3>
+        <p> O </p>
+        <button>Edit</button>
+      </li>
+     </ol>
+     <button>새로운 게임 시작</button>
+    </section>
+    <section id="game-start">
+      <article>
+        <h3><span id="winner-user">플레이어 이름</span>님의 승리입니다!</h3>
+        <p>새로운 게임을 원하시면 버튼을 누르세요.</p>
+      </article>
+      <p><span id="active-player-name">플레이어 이름</span>님의 차례입니다.</p>
+      <ol>
+        <li></li>
+        <li></li>
+        <li></li>
+
+        <li></li>
+        <li></li>
+        <li></li>
+
+        <li></li>
+        <li></li>
+        <li></li>
+      </ol>
+    </section>
+  </main>
+</body>
+</html>
+
