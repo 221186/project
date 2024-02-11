@@ -6,10 +6,17 @@
   <title>Tic Tac Toe</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@700&family=Oleo+Script:wght@700&family=Oswald:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Oleo+Script+Swash+Caps:wght@700&family=Oleo+Script:wght@700&family=Open+Sans:wght@500&family=Oswald:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@400;600;700&family=Oleo+Script+Swash+Caps:wght@700&family=Oleo+Script:wght@700&family=Open+Sans:wght@500&family=Oswald:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/overlays.css">
+  <link rel="stylesheet" href="css/configulation.css">
+  <link rel="stylesheet" href="css/game.css">
 </head>
 <body>
+  <div id="backdrop"></div>
   <header>
     <div>
       <h1>Play Tic, Tac Toe</h1>
@@ -19,16 +26,16 @@
     </div>
   </header>
   <main> 
-    <aside>
+    <aside class="modal" id="config-overlay">
       <h2>당신의 이름을 작성하세요.</h2>
       <form>
-        <div>
+        <div class="form-control">
           <label id="playname">플레이어 이름</label>
           <input type="text" name="username" id="playname">
         </div>
         <div>
-          <button type="submit">확인</button>
-          <button type="button">취소</button>
+          <button type="submit" class="btn btn-alt">확인</button>
+          <button type="button" class="btn">취소</button>
         </div>
       </form>
     </aside>
@@ -37,25 +44,25 @@
       <li>
         <h2>플레이어 1</h2>
         <h3>플레이어 이름</h3>
-        <p> X </p>
-        <button>Edit</button>
+        <p class="user-symbol"> X </p>
+        <button class="btn btn-alt">Edit</button>
       </li>
       <li>
         <h2>플레이어 2</h2>
         <h3>플레이어 이름</h3>
-        <p> O </p>
-        <button>Edit</button>
+        <p class="user-symbol"> O </p>
+        <button class="btn btn-alt">Edit</button>
       </li>
      </ol>
-     <button>새로운 게임 시작</button>
+     <button class="btn">새로운 게임 시작</button>
     </section>
     <section id="game-start">
-      <article>
+      <article id="game-over">
         <h3><span id="winner-user">플레이어 이름</span>님의 승리입니다!</h3>
         <p>새로운 게임을 원하시면 버튼을 누르세요.</p>
       </article>
       <p><span id="active-player-name">플레이어 이름</span>님의 차례입니다.</p>
-      <ol>
+      <ol id="game-board">
         <li></li>
         <li></li>
         <li></li>
