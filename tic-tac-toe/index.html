@@ -46,19 +46,23 @@
     <section id="game-users">
      <ol>
       <li>
-        <h2>플레이어 1</h2>
-        <h3 class="playname">플레이어 이름</h3>
-        <p class="user-symbol"> X </p>
-        <button class="btn btn-alt" id="edit-player-1-btn">Edit</button>
+        <article id="player-1-data">
+          <h2>플레이어 1</h2>
+          <h3>플레이어 이름</h3>
+          <p class="user-symbol"> X </p>
+          <button class="btn btn-alt" id="edit-player-1-btn" data-playerid="1">Edit</button>
+        </article>
       </li>
       <li>
-        <h2>플레이어 2</h2>
-        <h3 class="playname">플레이어 이름</h3>
-        <p class="user-symbol"> O </p>
-        <button class="btn btn-alt" id="edit-player-2-btn">Edit</button>
+        <article id="player-2-data">
+          <h2>플레이어 2</h2>
+          <h3>플레이어 이름</h3>
+          <p class="user-symbol"> O </p>
+          <button class="btn btn-alt" id="edit-player-2-btn" data-playerid="2">Edit</button>
+        </article>
       </li>
      </ol>
-     <button class="btn">새로운 게임 시작</button>
+     <button class="btn" id="start-game-btn">새로운 게임 시작</button>
     </section>
     <section id="game-start">
       <article id="game-over">
@@ -67,17 +71,17 @@
       </article>
       <p><span id="active-player-name">플레이어 이름</span>님의 차례입니다.</p>
       <ol id="game-board">
-        <li></li>
-        <li></li>
-        <li></li>
+        <li data-col="1" data-row="1"></li>
+        <li data-col="2" data-row="1"></li>
+        <li data-col="3" data-row="1"></li>
 
-        <li></li>
-        <li></li>
-        <li></li>
+        <li data-col="1" data-row="2"></li>
+        <li data-col="2" data-row="2"></li>
+        <li data-col="3" data-row="2"></li>
 
-        <li></li>
-        <li></li>
-        <li></li>
+        <li data-col="1" data-row="3"></li>
+        <li data-col="2" data-row="3"></li>
+        <li data-col="3" data-row="3"></li>
       </ol>
     </section>
   </main>
