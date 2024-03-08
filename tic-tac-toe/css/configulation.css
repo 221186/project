@@ -21,7 +21,7 @@
 .error label {
   color: rgb(136, 2, 2);
 }
-.error input {
+.error input { /*error 클래스의 input 요소의 css 스타일을 추가한다. */
   border-color: rgb(136, 2, 2);
   background-color: rgb(253, 219, 219);
 }
