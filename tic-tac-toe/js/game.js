@@ -55,7 +55,7 @@
   gameData[selectedRow][selectedColumn] = activePlay + 1; // activePlay에 1를 더한 것은 실제 플레이어들을 1또는 2이기 때문이다. //
   
   const winnerId = checkForGameOver(); // 함수를 통해 winnerId에는 플레이어 1이 이기면 1을 플레이어 2가 이기면 2를 무승부가 나면 -1가 저장된다. //
-  console.log(winnerId)
+  
   if (winnerId !== 0) { // 만약 0이라면 무승부이다. // 
     gameOver(winnerId);
   }
@@ -83,14 +83,14 @@
       return gameData[0][j];
     }
   }
-  if ( // 이 경우는 반복문을 통해 좌에서 우로 가는 대각선에 모두 같은 문자가 있는지 확인한다. //
+  if ( // 이 경우는 조건문을 통해 좌에서 우로 가는 대각선에 모두 같은 문자가 있는지 확인한다. //
     gameData[0][0] > 0 &&
     gameData[0][0] === gameData[1][1] &&
     gameData[1][1] === gameData[2][2]
   ) {
     return gameData[0][0];
   }
-  if ( // 이 경우는 반복문을 통해 우에서 좌로 가는 대각선에 모두 같은 문자가 있는지 확인한다. //
+  if ( // 이 경우는 조건문을 통해 우에서 좌로 가는 대각선에 모두 같은 문자가 있는지 확인한다. //
     gameData[0][2] > 0 &&
     gameData[0][2] === gameData[1][1] &&
     gameData[1][1] === gameData[2][0]

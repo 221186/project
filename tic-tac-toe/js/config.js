@@ -34,3 +34,4 @@ function SavePlayerConfig(event) {
   }
   DeletePlayerConfig(); // 플레이어가 이름을 작성하고 확인을 누르면 브라우저가 submit하고 창이 닫힌다.
  }
+ 
